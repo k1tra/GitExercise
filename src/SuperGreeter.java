@@ -4,11 +4,12 @@ public class SuperGreeter {
     public void start() {
         System.out.println("Det virker!");
     }
-    Scanner sc = new Scanner(System.in);
-    public String greet () {
+    public void greet() {
         System.out.println("Indtast dit navn");
+        Scanner sc = new Scanner(System.in);
+
        String navn = sc.next();
-        return navn;
+        System.out.println("Hej "+ navn);
     }
     public static void main(String[] args){
         SuperGreeter sg = new SuperGreeter();
